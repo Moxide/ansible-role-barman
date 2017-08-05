@@ -4,7 +4,7 @@ grofers.ansible-role-barman [![Build Status](https://travis-ci.org/grofers/ansib
 💥 Battle-tested at [Grofers](https://grofers.com/)
 
 Ansible role which installs and configures
-[barman by 2ndQuadrant](http://www.pgbarman.org/) on debian based distros only
+[barman by 2ndQuadrant](http://www.pgbarman.org/) on debian based distros only (RedHat based distros on test)
 (Tested with Ubuntu 14.04 only, but should work with other distros as well).
 
 Installation

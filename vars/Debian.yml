@@ -1,0 +1,23 @@
+---
+# vars file for ansible-role-barman, Debian based distros
+
+# APT settings
+barman_postgresql_apt_key_id: ACCC4CF8
+barman_postgresql_apt_key_url: "https://www.postgresql.org/media/keys/ACCC4CF8.asc"
+barman_postgresql_apt_repository: "deb http://apt.postgresql.org/pub/repos/apt/ {{ansible_distribution_release}}-pgdg main"
+
+## Pin-Priority of PGDG repository
+barman_postgresql_apt_pin_priority: 500
+
+barman_apt_packages:
+  - rsync
+  - python
+  - python-psycopg2
+  - python-pycurl
+
+barman_pip_packages:
+  - argcomplete
+  - argh
+  - psycopg2
+  - python-dateutil
+  - setuptools

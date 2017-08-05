@@ -1,0 +1,6 @@
+# file: ansible-role-barman/tasks/install_yum.yml
+
+- name: Install Barman
+  yum:
+    name: barman
+    state: present
